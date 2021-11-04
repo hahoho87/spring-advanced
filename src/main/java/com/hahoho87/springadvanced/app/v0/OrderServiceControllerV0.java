@@ -1,4 +1,4 @@
-package com.hahoho87.app.v0;
+package com.hahoho87.springadvanced.app.v0;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,10 +14,5 @@ public class OrderServiceControllerV0 {
     public String request(String itemId) {
         orderService.orderItem(itemId);
         return "ok";
-    }
-
-    @GetMapping("/test")
-    public String test() {
-        return "test";
     }
 }

@@ -1,4 +1,4 @@
-package com.hahoho87.app.v0;
+package com.hahoho87.springadvanced.app.v0;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
