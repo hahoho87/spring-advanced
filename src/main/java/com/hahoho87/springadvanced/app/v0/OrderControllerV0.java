@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequiredArgsConstructor
-public class OrderServiceControllerV0 {
+public class OrderControllerV0 {
 
     private final OrderServiceV0 orderService;
 

@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequiredArgsConstructor
-public class OrderServiceControllerV1 {
+public class OrderControllerV1 {
 
     private final OrderServiceV1 orderService;
     private final HelloTraceV1 trace;
