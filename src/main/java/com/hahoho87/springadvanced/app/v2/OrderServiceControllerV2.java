@@ -1,7 +1,7 @@
 package com.hahoho87.springadvanced.app.v2;
 
-import com.hahoho87.springadvanced.app.trace.TraceStatus;
-import com.hahoho87.springadvanced.app.trace.hellotrace.HelloTraceV2;
+import com.hahoho87.springadvanced.trace.TraceStatus;
+import com.hahoho87.springadvanced.trace.hellotrace.HelloTraceV2;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

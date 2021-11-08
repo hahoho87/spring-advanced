@@ -1,4 +1,4 @@
-package com.hahoho87.springadvanced.app.trace;
+package com.hahoho87.springadvanced.trace;
 
 public class TraceStatus {
 
