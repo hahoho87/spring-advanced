@@ -38,4 +38,23 @@ class TemplateMethodTest {
         AbstractTemplate template2 = new SubClassLogic2();
         template2.excute();
     }
+
+    @Test
+    void templateMethodV2() {
+        AbstractTemplate template1 = new AbstractTemplate() {
+            @Override
+            protected void call() {
+                log.info("비지니스 로직 1 실행");
+            }
+        };
+        template1.excute();
+
+        AbstractTemplate template2 = new AbstractTemplate() {
+            @Override
+            protected void call() {
+                log.info("비지니스 로직 2 실행");
+            }
+        };
+        template2.excute();
+    }
 }
