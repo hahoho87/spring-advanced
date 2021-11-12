@@ -1,6 +1,7 @@
 package com.hahoho87.springadvanced.trace.strategy;
 
 import com.hahoho87.springadvanced.trace.strategy.code.strategy.ContextV1;
+import com.hahoho87.springadvanced.trace.strategy.code.strategy.Strategy;
 import com.hahoho87.springadvanced.trace.strategy.code.strategy.StrategyLogic1;
 import com.hahoho87.springadvanced.trace.strategy.code.strategy.StrategyLogic2;
 import lombok.extern.slf4j.Slf4j;
@@ -40,5 +41,14 @@ public class ContextV1Test {
         StrategyLogic2 strategyLogic2 = new StrategyLogic2();
         ContextV1 context2 = new ContextV1(strategyLogic2);
         context2.execute();
+    }
+
+    @Test
+    void strategyPatternTestV2() {
+        ContextV1 contextV1 = new ContextV1(() -> log.info("비지니스 로직 1 실행"));
+        contextV1.execute();
+
+        ContextV1 contextV2 = new ContextV1(() -> log.info("비지니스 로직 1 실행"));
+        contextV2.execute();
     }
 }
