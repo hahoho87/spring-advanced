@@ -1,6 +1,5 @@
 package com.hahoho87.springadvanced.proxy.config;
 
-import com.hahoho87.springadvanced.proxy.app.v1.*;
 import com.hahoho87.springadvanced.proxy.app.v2.OrderControllerV2;
 import com.hahoho87.springadvanced.proxy.app.v2.OrderRepositoryV2;
 import com.hahoho87.springadvanced.proxy.app.v2.OrderServiceV2;
