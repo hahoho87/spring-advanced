@@ -1,8 +1,8 @@
-package com.hahoho87.springadvanced.pureproxy.concreteproxy;
+package com.hahoho87.springadvanced.proxy.pureproxy.concreteproxy;
 
-import com.hahoho87.springadvanced.pureproxy.concreteproxy.code.ConcreteClient;
-import com.hahoho87.springadvanced.pureproxy.concreteproxy.code.ConcreteLogic;
-import com.hahoho87.springadvanced.pureproxy.concreteproxy.code.TimeProxy;
+import com.hahoho87.springadvanced.proxy.pureproxy.concreteproxy.code.ConcreteClient;
+import com.hahoho87.springadvanced.proxy.pureproxy.concreteproxy.code.ConcreteLogic;
+import com.hahoho87.springadvanced.proxy.pureproxy.concreteproxy.code.TimeProxy;
 import org.junit.jupiter.api.Test;
 
 class ConcreteProxyTest {

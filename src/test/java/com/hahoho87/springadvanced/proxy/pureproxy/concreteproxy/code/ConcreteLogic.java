@@ -1,4 +1,4 @@
-package com.hahoho87.springadvanced.pureproxy.concreteproxy.code;
+package com.hahoho87.springadvanced.proxy.pureproxy.concreteproxy.code;
 
 import lombok.extern.slf4j.Slf4j;
 
