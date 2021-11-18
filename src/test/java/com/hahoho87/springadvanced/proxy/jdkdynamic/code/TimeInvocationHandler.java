@@ -19,7 +19,7 @@ public class TimeInvocationHandler implements InvocationHandler {
         log.info("Time Proxy Start");
         long startTime = System.currentTimeMillis();
 
-        Object result = method.invoke(target);
+        Object result = method.invoke(target, args);
 
         long endTime = System.currentTimeMillis();
         long resultTime = endTime - startTime;
