@@ -26,6 +26,8 @@ dependencies {
     // use lombok on test classes
     testCompileOnly 'org.projectlombok:lombok'
     testAnnotationProcessor 'org.projectlombok:lombok'
+    // byte buddy
+    implementation 'net.bytebuddy:byte-buddy:1.12.1'
 }
 
 test {
