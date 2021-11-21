@@ -48,7 +48,6 @@ class ByteBuddyProxyTest {
         Class<? extends ConcreteService> proxyClass = new ByteBuddy().subclass(ConcreteService.class)
                 .method(named("call")).intercept(InvocationHandlerAdapter.of(new TimeInvocationHandler(new ConcreteService())))
                 .make().load(ConcreteService.class.getClassLoader()).getLoaded();
-
         ConcreteService concreteService = proxyClass.getConstructor().newInstance();
         concreteService.call();
     }
