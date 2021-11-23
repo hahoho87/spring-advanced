@@ -20,3 +20,8 @@
 - 빈 후처리기를 사용하려면 `BeanPostProcessor` 인터페이스를 구현하고, 스프링 빈으로 등록
 - `postProcessBeforeInitialization`: 객체 생성 이후에 `@PostConstruct` 와 같은 초기화가 발생하기 전에 호출되는 포스트 프로세서
 - `postProcessAfterInitialization`: 객체 생성 이후에 `@PostConstruct` 와 같은 초기화가 발생한 다음 호출되는 포스트 프로세서  
+
+## 스프링 제공 빈 후처리기
+### 자동 프록시 생성기 - AutoProxyCreator
+- `AnnotationAwareAspectJAutoProxyCreator`
+- 스프링 빈으로 등록된 `Advisor` 들을 자동으로 찾아서 프록시가 필요한 곳에 자동으로 프록시 적용 
