@@ -1,12 +1,10 @@
 package com.hahoho87.springadvanced.proxy.app.v3;
 
-import com.hahoho87.springadvanced.proxy.app.v1.OrderRepositoryV1;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public class OrderRepositoryV3 implements OrderRepositoryV1 {
+public class OrderRepositoryV3 {
 
-    @Override
     public void save(String itemId) {
         if (itemId.equals("ex")) {
             throw new IllegalStateException("exception occurred");

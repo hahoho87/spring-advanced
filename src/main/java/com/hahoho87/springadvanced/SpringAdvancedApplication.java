@@ -1,6 +1,6 @@
 package com.hahoho87.springadvanced;
 
-import com.hahoho87.springadvanced.proxy.config.v3_proxyfactory.ProxyFactoryConfigV2;
+import com.hahoho87.springadvanced.proxy.config.v4_postprocessor.BeanPostProcessorConfig;
 import com.hahoho87.springadvanced.trace.logtrace.LogTrace;
 import com.hahoho87.springadvanced.trace.logtrace.ThreadLocalLogTrace;
 import org.springframework.boot.SpringApplication;
@@ -14,7 +14,8 @@ import org.springframework.context.annotation.Import;
 //@Import(DynamicProxyBasicConfig.class)
 //@Import(DynamicProxyFilterConfig.class)
 //@Import(ProxyFactoryConfigV1.class)
-@Import(ProxyFactoryConfigV2.class)
+//@Import(ProxyFactoryConfigV2.class)
+@Import(BeanPostProcessorConfig.class)
 @SpringBootApplication(scanBasePackages = "com.hahoho87.springadvanced.proxy.app")
 public class SpringAdvancedApplication {
 
