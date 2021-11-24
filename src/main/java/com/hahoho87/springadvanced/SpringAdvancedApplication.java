@@ -1,6 +1,6 @@
 package com.hahoho87.springadvanced;
 
-import com.hahoho87.springadvanced.proxy.config.v5_autoproxy.AutoProxyConfig;
+import com.hahoho87.springadvanced.proxy.config.v6_aop.AopConfig;
 import com.hahoho87.springadvanced.trace.logtrace.LogTrace;
 import com.hahoho87.springadvanced.trace.logtrace.ThreadLocalLogTrace;
 import org.springframework.boot.SpringApplication;
@@ -16,7 +16,8 @@ import org.springframework.context.annotation.Import;
 //@Import(ProxyFactoryConfigV1.class)
 //@Import(ProxyFactoryConfigV2.class)
 //@Import(BeanPostProcessorConfig.class)
-@Import(AutoProxyConfig.class)
+//@Import(AutoProxyConfig.class)
+@Import(AopConfig.class)
 @SpringBootApplication(scanBasePackages = "com.hahoho87.springadvanced.proxy.app")
 public class SpringAdvancedApplication {
 
@@ -24,6 +25,7 @@ public class SpringAdvancedApplication {
     public LogTrace logTrace() {
         return new ThreadLocalLogTrace();
     }
+
     public static void main(String[] args) {
         SpringApplication.run(SpringAdvancedApplication.class, args);
     }
